@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app.dashboard">
+  <head>
+    <meta charset="utf-8">
+    <title>dashboard</title>
+  </head>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <body>
+    <section ng-controller = "DashboardCtrl">
+      <ul ng-repeat = "account in accountList">
+        <li>
+          <span>Name: {{::account.firstName}} {{::account.lastName}}</span>
+        </li>
+      </ul>
+	<button ng-click = "backMethod()">Back</button>
+    </section>
+    <script type="text/javascript" src="details.js">
+    </script>
+  </body>
+</html>
